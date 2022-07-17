@@ -18,7 +18,7 @@ const App = ()=> {
 
   return (
     <div className="App">
-      <h1> Welcome to Jeopardy</h1>
+      <h1> Welcome to Jeopardy !</h1>
       {/* {question && question.map((id) <Question data={question} key={id} /> )} */}
       {/* {question && <Question data={question} /> } */}
    
@@ -26,6 +26,7 @@ const App = ()=> {
      {question &&<Question question={question}/>}
      {question &&<Category questionCategory={question}/>}
      {question &&<Answer questionAnswer={question}/>}
+     
     </div>
   );
 }

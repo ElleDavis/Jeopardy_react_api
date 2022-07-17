@@ -1,3 +1,5 @@
+import Button from 'react-bootstrap/Button';
+
 
 const Question =(props)=> {
     const {question}= props
@@ -6,13 +8,13 @@ const Question =(props)=> {
         <div id="questionDiv"> 
             <h2>Let's play!: </h2> 
             <div>
-                <h1>Question:</h1>
-                <h2> {question.question}</h2>
-                <h3>{question.value} </h3> 
+                {/* <h1>Question:</h1> */}
+                <h3> {question.question}</h3>
+                {/* <h3>{question.value} </h3>  */}
             </div>
 
             <label htmlFor="QuestionButton"></label>
-            <button type="submit" id="QuestionButton" value="" ></button>
+            <Button variant="warning" type="submit" id="QuestionButton" value="" >Get a Question</Button>
         
         </div>
     )

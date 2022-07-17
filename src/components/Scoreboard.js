@@ -1,17 +1,27 @@
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+
+
 
 const Scoreboard =()=>{
+    
+    const handleSubmit = e => {
+        e.preventDefault()
+        console.log()}
+
     return(
         <div>
             <h2>Score: </h2>
             <form>
-                <label htmlFor="Decrease"></label>
-                <button type="Decrease" id="Decrease" value="Decrease" > </button>
-
-                <label htmlFor="Increase"></label>
-                <button type="Increase" id="Increase" value="Increase" > </button>
-
-                <label htmlFor="Reset"></label>
-                <button type="" id="Reset" value="Reset" onChange=""> </button>
+               
+                <ButtonGroup aria-label="Basic example" onSubmit={handleSubmit}>
+                    <label htmlFor="Decrease"></label>
+                    <Button variant="primary" name="Decrease" id="Decrease" value="" >Decrease</Button>
+                    <label htmlFor="Increase"></label>
+                    <Button variant="success" type="Increase" id="Increase" value="Increase" >Increase</Button>
+                    <label htmlFor="Reset"></label>
+                    <Button variant="danger" type="" id="Reset" value="Reset" onChange="han">Reset</Button>
+                </ButtonGroup>
             </form>
         </div>
     )
